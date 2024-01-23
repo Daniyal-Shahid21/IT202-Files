@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .required {
+            color: black;
+            margin-left: 5px;
+        }
+        .error {
+            color: red;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Please Verify Your Email Address</h1>
+    <label for="email1">Enter Email:</label>
+    <input type="text" id="email1" placeholder="Email">
+    <span class="required" id="email1Required">*</span>
+    <br>
+
+    <label for="email2">Confirm Email:</label>
+    <input type="text" id="email2" placeholder="Confirm Email">
+    <span class="required" id="email2Required">*</span>
+    <span class="error" id="emailMatchError"></span>
+    <br>
+
+    <button id="confirmButton">Confirm Email</button>
+
+    <script>
+        $(document).ready(function() {
+            var $email1 = $("#email1");
+            var $email2 = $("#email2");
+            var $confirmButton = $("#confirmButton");
+            var $email1Required = $("#email1Required");
+            var $email2Required = $("#email2Required");
+            var $emailMatchError = $("#emailMatchError");
+
+            var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+            $confirmButton.on("click", function() {
+                var emailValue1 = $email1.val();
+                var emailValue2 = $email2.val();
+
+                $email1Required.text("");
+                $email2Required.text("");
+                $emailMatchError.text("");
+
+                if (emailValue1 === "") {
+                    $email1Required.text("This field is required.");
+                }
+                if (emailValue2 === "") {
+                    $email2Required.text("This field is required.");
+                }
+                else if (emailValue1 !== emailValue2) {
+                    $emailMatchError.text("The email addresses must match.");
+                    return; 
+                }
+                if (emailValue1 !== "" && emailValue2 !== "" && emailRegex.test(emailValue1) && emailRegex.test(emailValue2)) {
+                    alert("Email confirmation sucessful");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
