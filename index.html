@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Enter UCID</title>
+  </head>
+  <script>
+    function validateUCID() {
+      const valUCID = ["sds", "ova420", "bdo911", "ksh007", "swe777"];
+      const ucid = document.getElementById("ucid").value;
+      const regexPattern = /^[A-Za-z]{1,}[0-9]{0,3}$/;
+      if (!regexPattern.test(ucid)) {
+        alert("UCID DOES NOT CONFORM TO VALID FORMAT");
+      } else if (!valUCID.includes(ucid)) {
+        alert("VALID UCID FORMAT BUT INVALID UCID");
+      } else {
+        alert("VALID UCID FORMAT AND UCIID FOUND");
+      }
+    }
+  </script>
+
+  <body>
+    <form>
+      <input
+        type="text"
+        id="ucid"
+        name="ucid"
+        placeholder="Enter UCID"
+        title="A UCID is a sequence of letters followed by zero to three digits."/>
+      <label for="ucid"><strong>UCID</strong></label>
+      <br /><br />
+      <button style = "background-color: lightgreen;" type="button" onclick="validateUCID()">Submit</button>
+    </form>
+  </body>
+</html>
