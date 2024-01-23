@@ -1,0 +1,22 @@
+th {
+    border: thick solid blue;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+#dest {
+    background-color: lightcyan;
+}
+
+#date {
+    background-color: rgb(255, 0, 0);
+}
+
+#hotel {
+    background-color: hsl(217, 100%, 90%)
+}
+
+#activity {
+    background-color: #90EE90;
+}
+
