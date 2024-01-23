@@ -1,0 +1,27 @@
+header {
+	padding: 15px;
+	background-color: teal;
+	color: teal;
+	width: 21%;
+	font-size: 30pt;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 20px 20px 0px 0px;
+}
+
+p{
+	font-weight: bold;
+	font-size: 15pt;
+}
+
+.hovereffect {
+	color: maroon;
+	width: 14%;
+}
+
+
+.everything {
+	background-color: teal;
+	padding: 10px;
+	border-radius: 20px 20px 20px 20px;
+}
