@@ -1,13 +1,9 @@
-# House of Health Website
+# "Discord"
 
-Receptionist website that allows recetptionists found in the database to perform a variety of actions for patient accounts. 
+Live chatbot that allows for live communication with any two people. Includes user authentification and selection.
 Actions include:
-  - Adding patients
-  - Scheduling appointments
-  - Scheduling procedures
-  - Displaying database preview
-  - Removing appointments
-  - Removing procuedures
-  - Signing in/emailing confirmation email
-
-Programmed using HTML5, CSS, JS, PHP, SQL, JSON Web Token System
+  - Live chat
+  - User selection
+  - User authentification
+    
+Programmed using HTML5, CSS, JS, PHP, SQL, Ajax, jQuery
