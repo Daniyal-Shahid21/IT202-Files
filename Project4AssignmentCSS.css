@@ -1,0 +1,121 @@
+input[type="text"], input[type="password"], input[type="number"] {
+  width: 60%; 
+  padding: 5px; 
+  background-color: lightgray;
+  font-family:"Courier New";
+}
+
+body {
+  background-image: url("House.jpg");
+  background-repeat: no-repeat; 
+  background-size: 100%;
+}
+
+span{
+  color: darkblue;
+  font-family:"Courier New";
+}
+
+
+h1{
+  text-align:center;
+  font-family:"Trebuchet MS";
+}
+
+h4{
+  text-align:center;
+  font-family:"Trebuchet MS";
+}
+
+option, select {
+  width: 104.5%; 
+  margin-top: 70px;
+  padding: 5px; 
+  background-color: lightgray;
+  font-family:"Courier New";
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  max-width: 800px;
+  border: 5px solid;
+  padding: 15px;
+  background-color: rgba(29, 198, 144, 0.7);
+  border-radius: 20px;
+}
+
+.left_column,.right_column {
+  width: 30%;
+}
+
+.mid_column{
+  width: 40%;
+}
+
+.left_column {
+  text-align: left;
+}
+
+.mid_column {
+  text-align: left;
+}
+
+.left_button {
+  margin-left: -7px;
+}
+
+.buttons {
+  position: fixed;
+  padding-left: 25px;
+  padding-top: 62.5px;
+}
+
+.movedown {
+  display: block;
+  padding-left: 25px;
+  padding-top: 13px;
+}
+
+#reqtext {
+  visibility: hidden;
+}
+
+.right_column span{
+  display: block;
+  padding-left: 30px;
+  margin-top: 4px;
+  margin-bottom: 25px;
+  font-family:"Courier New";
+}
+
+.left_column label {
+  display: block;
+  padding-left: 25px;
+  margin-top: 3px;
+  margin-bottom: 6.5px;
+  font-family:"Courier New";
+  font-weight: bold;
+}
+
+.left_column span {
+  display: block;
+  padding-left: 25px;
+  margin-top: 20px;
+  margin-bottom: 6.5px;
+  font-family:"Courier New";
+  color: #1C4670;
+  font-weight: bold;
+}
+
+.mid_column input {
+  margin-bottom: 15px;
+  padding: 5px;
+  width: 100%;
+}
+
+.right_column button, input {
+  background-color: white;
+  padding: 4px;
+  font-family:"Trebuchet MS";
+}

@@ -1,0 +1,56 @@
+body {
+  background-image: url("House.jpg");
+  background-repeat: no-repeat;
+  background-size: 101%;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Trebuchet MS";
+}
+
+h4{
+  text-align:center;
+  font-family:"Trebuchet MS";
+}
+
+button {
+    background-color: darkslategray;
+    color: lightseagreen;
+    padding: 5px;
+    font-family:"Trebuchet MS";
+    margin-left: 10px;
+    margin-right: 25px;
+}
+
+table {
+  margin: 0 auto;
+  border: darkslategray;
+}
+
+input,table{
+  color: darkslategray;
+}
+
+th,td {
+  border:solid seagreen;
+  background-color: rgba(29, 198, 144, 0.7);
+  font-size: 9px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 5%;
+    border: 5px solid;
+    padding: 15px;
+    background-color: rgba(29, 198, 144, 0.7);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.center {
+  text-align: center;
+}
