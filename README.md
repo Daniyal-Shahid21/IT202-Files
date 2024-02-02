@@ -11,3 +11,5 @@ Actions include:
   - Signing in/emailing confirmation email
 
 Programmed using HTML5, CSS, JS, PHP, SQL, JSON Web Token System
+
+https://web.njit.edu/~sds/TEST/Project4HomePagePHP.php
