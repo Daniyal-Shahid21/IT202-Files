@@ -1,5 +1,5 @@
-# IT202-HW
+# House of Health Website
 
-HW/Final Project Files For Weeks 1 - 14 for NJIT's IT202 class
+Receptionist website that allows recetptionists found in the database to perform a variety of actions for patient accounts. 
 
-Semester-long website project has been truncated to one file for easier navigation
+Programmed using HTML5,CSS,JS,PHP,SQL
